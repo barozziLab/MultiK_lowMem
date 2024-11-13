@@ -47,7 +47,7 @@ Note that, due to the implementation of the foreach (parallelization) package in
 The numChunks parameter lets you choose into how many chunks the result matrix will be separated. The scoring will then be performed in $p = (numChunks * (numChunks + 1)) / 2$ pieces, therefore p should exceed the number of allocated cores.
 However, for small datasets, using many cores for that part will not lead to a gain in speed.
 
-### Running MultiK directly on a matrix
+### Running MultiK directly on a dimensionality reduced matrix
 
 You can directly use the matrix as input for MultiK in that case.
 ```
