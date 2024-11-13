@@ -7,8 +7,8 @@
 
 ### General Information
 This is a more flexible re-implementation of MultiK and does not require a seurat object as input, but directly runs on a matrix (cells x components) of any dimensionality reduction. In the seurat analysis workflow, these are PCA components, but you can also use NMF components (as for example identified by the DECIPHER-seq workflow).
-In this implementation, leiden clustering is used, but it can easily be changed to other methods/algorithms by changing the main function. 
-Note, that as a tradeoff for the memory-efficient behaviour of this implementation not all outputs from the original workflow can be produced. However, the diagnostic plots to choose the optimal k are available and those are the main aim of the method.
+In this implementation, leiden clustering is used, but it can easily be changed to other methods/algorithms by changing the main function. We are actively working on implementing this among other things as a parameter directly in the main function.
+Note, that as a tradeoff for the memory-efficient behaviour of this implementation not all outputs from the original workflow can be produced. The code is under active development and we are working on adding as much of these features as possible. However, the diagnostic plots to choose the optimal k are available and those are the main aim of the method.
 Below are two examples for using this MultiK implementation with a seurat object or directly on a matrix.
 
 ```
