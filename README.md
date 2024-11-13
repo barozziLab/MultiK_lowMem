@@ -1,9 +1,9 @@
 ## Minimal, memory conserving and parallelized implementation of MultiK
 
 #### References
-Publication of MultiK: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02445-5
-Github of the original implementation: https://github.com/siyao-liu/MultiK/tree/main
-Github of an adapted parallelizable version of MultiK: https://github.com/ewilliams-uhn/MultiKParallel
+[MultiK publication](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02445-5) \
+[original implementation](https://github.com/siyao-liu/MultiK/tree/main) \
+[parallel implementation](https://github.com/ewilliams-uhn/MultiKParallel)
 
 ### General Information
 This is a more flexible re-implementation of MultiK and does not require a seurat object as input, but directly runs on a matrix (cells x components) of any dimensionality reduction. In the seurat analysis workflow, these are PCA components, but you can also use NMF components (as for example identified by the DECIPHER-seq workflow).
